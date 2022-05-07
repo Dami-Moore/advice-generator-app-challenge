@@ -1,0 +1,128 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background-color: hsl(218, 23%, 16%);    
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    border: 0.5px thin;
+    max-width: 475px;
+    text-align: center;
+    padding: 1.5% 2%;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 24%);
+    box-sizing: border-box;
+}
+
+.advice{
+    margin: 25px auto;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+    width: 80%;
+}
+
+.advice-id {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    margin-top: 20px;
+}
+
+.desktop{
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+
+.mobile {
+    display: none;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.dice-icon {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    background-color: hsl(150, 100%, 66%);
+    padding: 4%;
+    border-radius: 50%;
+    width: 30px;
+    transition: padding 3s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dice-icon:focus {
+    outline: none !important;
+}
+
+.dice-icon:hover {
+    box-shadow: 0 0 10px hsl(150, 100%, 70%);
+    cursor: pointer;
+}
+
+.dice-icon img {
+    margin: 0 auto;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(193, 38%, 86%); 
+    margin-top: 50px;
+}
+    
+.attribution  a { 
+    color: hsl(150, 100%, 66%); 
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .desktop {
+        display: none
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .dice-icon {
+        top: 35px;
+    }
+
+    .attribution {
+        font-size: 0.65rem;
+    }
+
+    .advice-id {
+        margin-top: 20px;
+    }
+
+    .advice {
+        font-size: 1rem;
+        width: 90%;
+    }
+}
