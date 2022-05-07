@@ -16,7 +16,7 @@ body {
 
 .container {
     border: 0.5px thin;
-    max-width: 600px;
+    max-width: 500px;
     text-align: center;
     padding: 1.5% 2%;
     border-radius: 10px;
@@ -38,18 +38,18 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1.5px;
     word-spacing: 1.5px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .desktop{
-    width: 100%;
+    width: 90%;
     position: relative;
     top: 20px;
 }
 
 .mobile {
     display: none;
-    width: 100%;
+    width: 90%;
     position: relative;
     top: 10px;
 }
@@ -107,6 +107,7 @@ body {
 
     .mobile {
         display: block;
+        margin: 0 auto;
     }
 
     .dice-icon {
